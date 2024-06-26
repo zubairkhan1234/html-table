@@ -129,7 +129,7 @@ body {
 /* ************** */
 
 .table-large {
-    width: 1200px;
+    width: 1100px;
     margin: 10px auto;
     table-layout: fixed;
     border-collapse: collapse;
@@ -163,4 +163,50 @@ body {
 
 .table-large-3 tr:nth-child(3) td {
     height: 80px;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+    display: inline;
+}
+
+.header p {
+    font-weight: bold;
+}
+
+.header-left-image {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 80px;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .header-left-image {
+        position: relative;
+        top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .header p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header-left-image {
+        position: relative;
+        top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .header p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
