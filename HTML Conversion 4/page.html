@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            margin: 10px 30px;
+            margin-bottom: 25px;
+        }
+
+        .main-container {
+            padding: 15px;
+        }
+
+        .bg-burnt-sienna {
+            background-color: #fff3cc;
+        }
+
+        .bg-gray {
+            background-color: #dae1f4;
+        }
+
+        .bg-yellow-sunglow {
+            background-color: #ffbf04;
+        }
+
+        .header .header-center-image {
+            height: 60px;
+        }
+
+        .text-red {
+            color: red;
+        }
+
+        .header {
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+
+        .table-container {
+            width: 100%;
+            overflow: auto;
+
+        }
+
+        .table-medium {
+            width: 768px;
+            margin: 10px auto;
+            table-layout: fixed;
+            border-collapse: collapse;
+
+        }
+
+        .margin-bottom-0 {
+            margin-bottom: 0px;
+        }
+
+        .m-0 {
+            margin: 0px;
+        }
+
+        .table-medium tr td {
+            padding: 5px 10px;
+            font-size: 14px;
+            font-weight: 100
+        }
+
+        .table-medium tr td p {
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .table-top tr td {
+            padding: 0px 10px;
+        }
+
+        .table-bottom tr td {
+            padding: 0px 10px 0px 10px;
+        }
+
+        .table-medium td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+            height: 60px;
+        }
+
+        .table-evaluation tr th {
+            height: 60px;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .header p {
+            font-weight: bold;
+        }
+
+        .descrioption {
+            width: 768px;
+        }
+
+        .image-2 {
+            margin-left: 75px;
+        }
+
+        @media (max-width: 768px) {
+            .descrioption {
+                width: 100%;
+            }
+
+            .image-2 {
+                margin-left: 20px;
+            }
+            .header p {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .main-container {
+                padding: 20px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+
+            .header p {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <header class="header">
+            <div>
+                <img src="./image/logo2.png" alt="" class="header-center-image">
+                <img src="./image/logo.png" alt="" class="header-center-image image-2">
+            </div>
+            <h4 class="m-0" style="margin-top:5px;">
+                Grille de passage prérequis d’évaluation CQP IF
+            </h4>
+            <p class="m-0" style="font-weight: normal; margin-top:5px;">
+                Option Musculation Personal Training
+            </p>
+        </header>
+
+        <div class="descrioption" style="margin: 30px auto;">
+            <p style="font-style: italic; font-weight: 600; margin-bottom: 5px;">Déroulement de l’épreuve</p>
+            <p>En 45 minutes (15 minutes par thématique)</p>
+
+            <ul>
+                <li>20 questions en anatomie et biomécanique</li>
+                <li>20 questions en physiologie</li>
+                <li>20 questions en nutrition</li>
+            </ul>
+
+            <p>L’épreuve de QCU est réalisée sous surveillance de deux formateurs. Les candidats se connectent sur la
+            </p>
+            <p>plateforme informatique commune des délégataires sur le site www.cqp-fitness.fr. </p>
+            <p>Les questions tombent de façon aléatoire et différenciée pour chaque candidat.</p>
+            <p>Le résultat est donné à l’organisme de formation par les délégataires via la plateforme de gestion
+                commune.</p>
+            <p>Durée totale de l’épreuve : 45 minutes maximum</p>
+        </div>
+
+        <div class="table-container">
+            <table border="1" class="table-medium bg-gray table-top" style="margin-bottom: 0px ;" cellpadding="10px">
+                <tr>
+                    <td>Date :</td>
+                    <td>Lieu : </td>
+                    <td>OF :</td>
+                </tr>
+            </table>
+            <table class="table-medium bg-gray table-top" style="margin-top: 0px; border-top: 0px;" cellpadding="10px">
+                <tr>
+                    <td colspan="2">NOM :</td>
+                    <td colspan="2">Prénom : </td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="table-container">
+
+            <table border="1" class="table-evaluation table-medium margin-bottom-0" cellpadding="10px">
+                <tr class="bg-gray">
+                    <th colspan="2"></th>
+                    <th colspan="2">NOTE </th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>ANATOMIE </p>
+                    <td colspan="2"></td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>PHYSIOLOGIE</p>
+                    </td>
+                    <td colspan="2"></td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>NUTRITION</p>
+                    </td>
+                    <td colspan="2"></td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>MOYENNE</p>
+                    </td>
+                    <td colspan="2"></td>
+
+                </tr>
+                <tr>
+                    <td class="bg-yellow-sunglow" colspan="2">
+                        <p>MOYENNE</p>
+                    </td>
+                    <td colspan="2"></td>
+
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <p class="text-red">
+                            <b> Modalités de validation</b> : Chaque note est supérieure ou égale à 14 et la moyenne
+                            supérieure ou égale à 15. Compteurs remis à 0 à chaque passage.
+                        </p>
+                    </td>
+
+                </tr>
+                <tr class="bg-burnt-sienna">
+                    <td colspan="2">
+                        <p>Résultat des Prérequis d’évaluation</p>
+                    </td>
+                    <td>
+                        <p>Acquis</p>
+                    </td>
+                    <td>
+                        <p>Non-acquis</p>
+                    </td>
+                </tr>
+            </table>
+
+            <div style="width: 768px; margin: auto; display: flex; margin-top: 20px; height: 100px; ">
+                <div style="width: 50%; border: 1px solid black; padding: 5px;">
+                    <p>Evaluateur 1(Nom, fonction et signature)</p>
+                </div>
+                <div style="width:50%; border: 1px solid black; padding: 5px;">
+                    <p>Evaluateur 2 (Nom, fonction et signature)</p>
+                </div>
+            </div>
+            <div style="width: 768px; margin: auto; margin-top: 40px;">
+                <p style="margin: 0px; color: #b2b2b2; font-size: 12px;">CQP IF RNCP40595 – Sept 2025</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

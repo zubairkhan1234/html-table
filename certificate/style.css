@@ -1,0 +1,201 @@
+body {
+
+    font-family: 'Arial', sans-serif;
+    background-color: #1f2a36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.diploma-parent-container {
+    background-color: #fcdc00;
+    padding: 8px;
+}
+
+.diploma-container {
+    background-image: url('./pngegg.svg');
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: center;
+    background-color: white;
+    width: 700px;
+    height: 550px;
+    border: 8px solid #333;
+    text-align: center;
+    position: relative;
+}
+
+.diploma-child {
+    border: 2px solid #fcdc00;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.diploma-header {
+    margin-top: 70px;
+}
+
+.diploma-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Montserrat-bold';
+    margin-bottom: 0px;
+}
+
+.diploma-header h3 {
+    margin-top: 0px;
+}
+
+.diploma-header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat-semi-bold';
+}
+
+.diploma-body {
+    margin: 25px;
+}
+
+.diploma-body .title {
+    font-family: 'Montserrat-regular';
+    font-size: 15px;
+}
+
+.diploma-body p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.diploma-body .name {
+    font-family: 'Montserrat-semi-bold-italic';
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+.diploma-body .discription {
+    font-family: 'Montserrat-regular';
+    font-size: 12px;
+    width: 490px;
+    margin: auto;
+    margin-top: 115px;
+}
+
+.diploma-footer {
+    margin-top: auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.diploma-footer p {
+    font-size: 15px;
+    margin: 5px 0;
+    font-family: 'Montserrat-regular';
+    margin-bottom: 15px;
+
+}
+
+.diploma-footer .left {
+    border-bottom: 2px solid black;
+    width: 180px;
+    position: relative;
+    left: 35px;
+    bottom: 15px;
+}
+
+.diploma-footer .left p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.diploma-footer .right {
+    border-bottom: 2px solid black;
+    width: 100px;
+    position: relative;
+    right: 100px;
+    bottom: 20px;
+}
+
+
+
+
+
+.ribbon-container {
+    background-color: #fcdc00;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    left: 39%;
+    top: -70px;
+}
+
+.ribbon {
+    background-color: #F6D431;
+    /* Yellow background */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+    /* Rounded top corners */
+    position: relative;
+}
+
+.ribbon::after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 25px solid #F6D431;
+}
+
+.logo {
+    width: 80%;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.text br {
+    display: block;
+}
+
+
+.date-container {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
+
+.date-container p {
+    font-size: 13px;
+    font-family: 'Montserrat-regular-italic';
+}
+
+.signature-container{
+   
+    position: absolute;
+    left: 70px;
+    bottom: 20px;
+}
+
+.signature-container img{
+    width: 80px;
+}
